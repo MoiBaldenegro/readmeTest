@@ -54,5 +54,6 @@ Card type: Master Card
 number: 4000056655665556
 CVC: Any 3 digits
 Exp: Any future date.
+up
 
 #### Mercado pago
