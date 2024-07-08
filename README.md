@@ -26,7 +26,7 @@ In addition, alert systems were activated to test the functionality of the polic
 
 ### Gmail
 
-![Preview](readmeAssets/nralert.png)
+![Preview](readmeAssets/gmail_alert.png)
 
 ## Mobile
 
@@ -38,3 +38,21 @@ In addition, alert systems were activated to test the functionality of the polic
 1. A business called "Rita's Empanadas" was added in honor of the story that Rita shares with us about the extra tasks of the challenge.
 
 2. For extra activity number two, we added the business called "Literary Cafeteria" where each dish and drink refers to different Spanish-speaking authors.
+
+3. A test integration of payments with the Stripe and Mercado Pago APIs has been added. Please do not use real information to perform the tests. Below you will find information on test cards with which you can simulate a payment.
+
+## Test Card Information
+
+#### Stripe
+
+Card type: VISA
+number: 4242424242424242
+CVC: Any 3 digits
+Exp: Any future date.
+<br>
+Card type: Master Card
+number: 4000056655665556
+CVC: Any 3 digits
+Exp: Any future date.
+
+#### Mercado pago
