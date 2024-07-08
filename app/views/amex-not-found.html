@@ -1,0 +1,66 @@
+<style>
+    .amex-container {
+        width: 100%;
+        height: 100%;
+        padding: 20px; /* Espaciado interno */
+        margin: 20px 0; /* Margen superior e inferior */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center; /* Alineación centrada del texto */
+        font-size: 18px; /* Tamaño de fuente */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 64px;
+        justify-content: space-between
+    }
+
+    .amex-container h1 {
+        margin: 0; /* Eliminar margen superior del título */
+        font-size: 24px; /* Tamaño de fuente del título */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+    .amex-container a.button {
+        display: inline-block;
+        background-color: #9C070F; /* Color de fondo rojo */
+        color: white; /* Color de texto blanco */
+        text-decoration: none; /* Sin subrayado */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-top: 10px; /* Margen superior */
+        transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    }
+
+    .amex-container a.button:hover {
+        background-color: #c82333; /* Color de fondo rojo más oscuro al pasar el mouse */
+    }
+    #metods{
+        margin-top: 400px;
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+
+    }
+    #metods img{
+        width: 150px;
+        height: 150px;
+        opacity: 0.7;
+
+    }
+    
+</style>
+
+<div class="amex-container">
+    <h1>Los pagos con tarjetas American Express no se encuentran disponibles. Por favor, prueba con un método de pago diferente.</h1>
+    <a href="./#/checkout" class="button">Return to checkout</a>
+
+    <div id="metods"> 
+        <img src="../assets/bitcoin.svg" alt="">
+        <img src="../assets/btc.svg" alt="">
+        <img src="../assets/mastercard.svg" alt="">
+        <img src="../assets/visa.svg" alt="">
+        <img src="../assets/ml.svg" alt="">
+    </div>
+</div>
+

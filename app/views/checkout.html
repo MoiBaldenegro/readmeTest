@@ -1,0 +1,111 @@
+<div class="checkout-container"> 
+  <form name="form" class="checkout-form">
+    <div class="pay-interface" >
+      <div>
+        <span>Payment Information</span>
+        <span>All transactions are secure and encrypted</span>
+      </div>
+      <div>
+        <div >
+          <div class="checkout-head">
+            <h3>Deliver To:</h3>
+            <div class="order-info">
+              <div>{{customer.name}}</div>
+              <div>{{customer.address}}</div>
+            </div>
+            
+            <a href="#/customer">Reorder</a>
+            <div>
+              <img src="../assets/visa.svg" alt="visa-logo" class="visa-logo">
+              <img src="../assets/mastercard.svg" alt="mastercard-logo" class="mastercard-logo">
+            </div>
+          </div>
+          <div class="span6">
+              <select name="ccType" class="payment-select"
+                      required
+                      ng-model="cart.payment.type">
+                <option value="visa">Visa</option>
+                <option value="mc">MasterCard</option>
+                <option value="amex">Amex</option>
+                <option value="discover">Discover</option>
+              </select>
+          <div >
+              <input class="first-input" 
+                      type="text" name="ccNum"
+                     placeholder="Card number"
+                     maxlength="16"
+                     required ng-pattern="/\d{16}/"
+                     ng-model="cart.payment.number">
+          </div>
+          <div class="double-input">
+              <input type="text" name="ccExp" 
+              placeholder="mm/yyyy" 
+              class="first-input" 
+                     maxlength="16"
+                     required ng-pattern="/\d\d\/\d\d\d\d/"
+                     ng-model="cart.payment.expire">
+              <input type="text" name="ccCvc" 
+              placeholder="CVC" class="first-input" 
+                     maxlength="4"
+                     required ng-pattern="/\d{3,4}/"
+                     ng-model="cart.payment.cvc">
+
+          </div>
+          <span class="total-check" >Total to pay: {{ cart.total() | currency }}</span>
+          <button ng-disabled="form.$invalid || !cart.items.length || submitting"
+        ng-click="purchase()" class="total-check-btn">Pay up</button>
+
+
+          </div>
+        </div>
+      </div>
+      <a class="pay-metod" href="#/sucess/pay"><span>Bitcoin</span> <div class="go-container"><img src="../assets/btc.svg" alt="Bitcoin-logo" class="bitcoin-logo"><img src="../assets/go.svg" alt="go-icon" class="go-icon"></div></a>
+      <a class="pay-metod" ng-click="createStripeSession()"><span>Stripe </span><div class="go-container"><img src="../assets//bitcoin.svg" alt="stripe-logo" class="stripe-logo"><img src="../assets/go.svg" alt="go-icon" class="go-icon"></div></a>
+      <div class="pay-metod"><span>Mercado pago</span><div class="go-container"><img src="../assets/../assets/ml.svg" alt="mp-logo" class="ml-logo"><img src="../assets/go.svg" alt="go-icon" class="go-icon"></div></div>
+      <div class="pay-footer">
+        <p>
+          ⚠️ This paid system is for testing the Platzi challenge, please do not use real information to test it.
+        </p>
+        <p>
+          💁 For any questions you can check the code on my github /moibaldenegro, or feel free to contact me on any of my networks that you will also find within my github profile. It is always a pleasure to chat with you... :)
+        </p>
+      </div>
+    </div>
+  </form>
+  <div class="checkout-list">
+    <div class="head-checklist">
+      <h2>checklist</h2>
+      <p>We have your order!</p>
+    </div>
+    <div class="total-to-pay">
+      <span>Total to pay</span>
+      <span>{{ cart.total() | currency }}</span>
+    </div>
+    <table class="table table-hover table-striped table-order" >
+      <tr>
+        <th class="qty">Qty</th>
+        <th class="item-table">Description</th>
+        <th class="item-table">Price</th>
+        <th class="item-table">Subtotal</th>
+      </tr>
+      <tr ng-repeat="item in cart.items">
+        <td class="qty"><input type="number" ng-model="item.qty" class="qtyinput"></td>
+        <td class="item-table">{{item.name}}</td>
+        <td class="item-table">{{item.price | currency}}</td>
+        <td class="item-table">{{item.price * item.qty | currency}}</td>
+      </tr>
+    </table>
+    <div class="pay-footer-pay">
+      <a href="#/menu/{{restaurantId}}" >Back to Menu 🔙</a>
+      <a href  ng-click="cart.reset()">Clear Cart 🛒 </a>
+    </div>
+  </div>
+</div>
+<script>
+  var app = angular.module('myApp', []);
+  app.controller('myController', function($scope) {
+      $scope.alert = function() {
+          alert('Amex selected!');
+      };
+  });
+</script>

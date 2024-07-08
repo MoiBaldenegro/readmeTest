@@ -1,0 +1,28 @@
+.card{
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+    transition: .25s ease;
+    max-height: 456px !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+   
+  }
+
+  .card:hover{
+    background-color: #f3f3f3;
+   
+  }
+  .card a{
+   
+  }
+  
+  .card img{
+   height: 157px;
+   width: 437px;
+   border-radius: 16px;
+  }
+
+ 

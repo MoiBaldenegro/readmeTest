@@ -1,0 +1,37 @@
+{
+  "name": "@foodme-platzi-moi",
+  "version": "0.0.5",
+  "description": "Super awesome tutorial",
+  "keywords": [],
+  "homepage": "http://angularjs.org/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular/foodme.git"
+  },
+  "author": "AngularJS Team",
+  "contributors": [
+    "Igor Minár <igor@angularjs.org",
+    "Miško Hevery <misko@angularjs.org",
+    "Vojta Jína <vojta@angularjs.org"
+  ],
+  "main": "server/start.js",
+  "scripts": {
+    "start": "node -r newrelic server/start.js",
+    "dev": "node server/start.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "csv": ">=0.2.1",
+    "dotenv": "^16.4.5",
+    "express": ">=3.0.0",
+    "morgan": "^1.10.0",
+    "newrelic": "^11.19.0",
+    "open": "^8.4.2",
+    "pino": "^8.7.0",
+    "stripe": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=20.14.0"
+  },
+  "license": "MIT"
+}

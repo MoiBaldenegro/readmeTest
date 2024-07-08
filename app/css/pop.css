@@ -1,0 +1,52 @@
+.pop{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f8f8f8;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 100000;
+    position:static;
+    
+    cursor: pointer;
+  
+  }
+
+
+  .pop img{
+    margin-bottom: -5px;
+    z-index: 5000;
+    transition: .25s ease;
+
+
+  }
+  .pop img:hover{
+    filter: brightness(0.8);
+  }
+
+  .pop span {
+    margin-top: 45px;
+    position: absolute;
+    z-index: 10000;
+    font-weight: 900;
+    text-align: center;
+    width: 180px;
+    text-shadow:
+    -1px -1px 0 #000,  /* Sombra superior izquierda */
+     1px -1px 0 #000,  /* Sombra superior derecha */
+    -1px  1px 0 #000,  /* Sombra inferior izquierda */
+     1px  1px 0 #000;  /* Sombra inferior derecha */
+}
+
+  .flag{
+    z-index: 150000;
+    position: absolute;
+   margin-top: 100px;
+  }
+  
+  

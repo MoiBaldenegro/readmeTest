@@ -1,0 +1,311 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none; /* Elimina los bordes de las celdas */
+}
+
+.checkout-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.checkout-form{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-list{
+    background-color: #9C070F;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    color: aliceblue;
+
+}
+
+.pay-interface{
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 600px;
+}
+
+.pay-interface>div{
+    display: flex;
+    background-color: #9C070F;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+
+.pay-interface>div>div{
+    width: 100%;
+}
+
+.pay-interface>div:first-child{
+    border-radius: 16px;
+    padding: 16px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+.pay-interface>div:first-child>span:first-child{
+    font-size: 24px;
+    font-weight: 600;
+  
+}
+
+.checkout-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: aliceblue;
+    border-radius:8px;
+}
+
+.span6:last-child{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+
+.checkout-head>a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.checkout-head>a:hover{
+    text-decoration: underline;
+}
+
+.payment-select{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.payment-select>option{
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.first-input{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.double-input{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+.total-check,
+.total-check-btn{
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid white;
+    font-size: large;
+}
+
+.total-check-btn{
+    color: rgba(0, 0, 0, 0.726);
+
+}
+
+.pay-footer{
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #757171;
+}
+
+.pay-metod{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px !important;
+
+}
+
+.head-checklist{
+    height: 120px;
+    width: 100%;
+    padding: 16px 0px;
+}
+
+.head-checklist h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 4px;
+    
+}
+
+.head-checklist p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px;
+}
+
+.table-order{
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    display: flex;
+    border-bottom: 2px solid white;
+}
+
+.total-to-pay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px 36px 0px;
+    font-size: 24px;
+    font-weight: 800;
+    width: 100%;
+    overflow-y: auto;
+    border-bottom: 2px solid white;
+}   
+
+.table-order tbody{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-remove-sign{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.item-table{
+    width: 170px;
+    overflow: hidden;
+    text-align: start;
+    padding: 8px;
+   
+}
+
+.qty{
+    width: 50px;
+}
+
+.qtyinput{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+}
+
+.double-input input{
+    border-radius: 8px;
+}
+
+.visa-logo,
+.mastercard-logo,
+.bitcoin-logo,
+.stripe-logo,
+.ml-logo{
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+}
+.visa-logo,
+.mastercard-logo{
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.order-info{
+    width: 285px;
+    display: flex;
+    overflow: hidden;
+}
+
+.go-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.go-logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-container{ 
+    width: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pay-footer-pay{
+    width: 100%;
+    padding: 16px;
+    display: flex !important;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.pay-footer-pay>a{
+    width: 100%;
+    border: 2px solid whitesmoke;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+a[class="pay-metod"]{
+    background-color: #9C070F;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: 0.3s ease;
+
+}
+a[class="pay-metod"]:hover{
+    filter: opacity(0.7);
+}
+.pay-footer-pay a:hover{
+    background-color: white;
+    color: #9C070F;
+}
