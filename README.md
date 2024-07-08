@@ -2,7 +2,8 @@
 
 ## http://retoplatzi.com
 
-![Preview](readmeAssets/shot.png)
+> Click the link to visit the preview
+> [retoplatzi.com](http://retoplatzi.com "Visitar retoplatzi.com") > ![Preview](readmeAssets/shot.png)
 
 ## Functions implemented for the challenge
 
@@ -45,15 +46,37 @@ In addition, alert systems were activated to test the functionality of the polic
 
 #### Stripe
 
-Card type: VISA
-number: 4242424242424242
-CVC: Any 3 digits
-Exp: Any future date.
-<br>
-Card type: Master Card
-number: 4000056655665556
-CVC: Any 3 digits
-Exp: Any future date.
-up
+- Option 1
+
+  - Card type: VISA
+  - number: 4242424242424242
+  - CVC: Any 3 digits
+  - Exp: Any future date.
+
+- Option 2
+
+  - Card type: Master Card
+  - number: 4000056655665556
+  - CVC: Any 3 digits
+  - Exp: Any future date.
 
 #### Mercado pago
+
+![Preview](readmeAssets/stripe.png)
+
+# To start the app locally
+
+## Prerequisites
+
+- Node.js (version 14.x higher)
+- npm (version 8.x or higher)
+
+## Installation
+
+Clone the repository to your local machine and navigate to the project directory:
+
+```bash
+npm istall
+
+npm run start
+```
